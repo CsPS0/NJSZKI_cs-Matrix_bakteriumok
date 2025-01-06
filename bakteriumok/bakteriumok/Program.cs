@@ -27,10 +27,10 @@ Console.WriteLine("");
 
 #region 1.feladat
 Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine($"1. Feladat");
+Console.WriteLine("1. Feladat");
 Console.ResetColor();
 
-Console.Write($"Adj meg egy számot 1 és 50 között: ");
+Console.Write("Adj meg egy számot 1 és 50 között: ");
 int szam = int.Parse(Console.ReadLine()!);
 
 bool keres_szam = false;
@@ -53,11 +53,11 @@ for (int i = 0; i < sor; i++)
 
 if (keres_szam)
 {
-    Console.WriteLine($"A megadott szám szerepel a táblában.");
+    Console.WriteLine("A megadott szám szerepel a táblában.");
 }
 else
 {
-    Console.WriteLine($"A megadott szám nem szerepel a táblában.");
+    Console.WriteLine("A megadott szám nem szerepel a táblában.");
 }
 #endregion
 
@@ -65,7 +65,7 @@ Pause();
 
 #region 2.feladat
 Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine($"2. Feladat");
+Console.WriteLine("2. Feladat");
 Console.ResetColor();
 
 int osszes_bakterium = 0;
@@ -90,7 +90,7 @@ Pause();
 
 #region 3.feladat
 Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine($"3. Feladat");
+Console.WriteLine("3. Feladat");
 Console.ResetColor();
 
 int[] terulet = new int[51];
@@ -125,10 +125,10 @@ Pause();
 
 #region 4.feladat
 Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine($"4. Feladat");
+Console.WriteLine("4. Feladat");
 Console.ResetColor();
 
-Console.WriteLine($"Baktériumok színezett megjelenítése:");
+Console.WriteLine("Baktériumok színezett megjelenítése:");
 
 for (int i = 0; i < sor; i++)
 {
@@ -142,7 +142,7 @@ for (int i = 0; i < sor; i++)
         else
         {
             Console.ResetColor();
-            Console.Write($"  .");
+            Console.Write("  .");
         }
     }
     Console.WriteLine();
@@ -154,7 +154,7 @@ Pause();
 
 #region 5.feladat
 Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine($"5. Feladat");
+Console.WriteLine("5. Feladat");
 Console.ResetColor();
 
 int bal = oszlop, jobb = 0, felso = sor, also = 0;
@@ -176,7 +176,7 @@ for (int i = 0; i < sor; i++)
 int szelesseg = jobb - bal + 1;
 int magassag = also - felso + 1;
 
-Console.WriteLine($"A minimális téglalap méretei:");
+Console.WriteLine("A minimális téglalap méretei:");
 Console.WriteLine($"Szélesség: {szelesseg}, Magasság: {magassag}");
 #endregion
 
@@ -184,7 +184,7 @@ Pause();
 
 #region 6.feladat
 Console.ForegroundColor = ConsoleColor.Red;
-Console.WriteLine($"6. Feladat");
+Console.WriteLine("6. Feladat");
 Console.ResetColor();
 
 bool erintkezes = false;
@@ -213,7 +213,7 @@ for (int i = 0; i < sor; i++)
 
 if (!erintkezes)
 {
-    Console.WriteLine($"Nincsenek egymással érintkező baktériumok.");
+    Console.WriteLine("Nincsenek egymással érintkező baktériumok.");
 }
 #endregion
 
